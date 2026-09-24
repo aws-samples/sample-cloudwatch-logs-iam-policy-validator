@@ -10,6 +10,10 @@ AWS CloudWatch Logs is enforcing the standard log group ARN format for IAM autho
 
 This script helps you verify your policies before that date.
 
+> **Tip:** To find *which* IAM policies in your account still use the old log
+> group ARN format, see
+> [List IAM Policies Impacted by the Enforcement](LIST_IMPACTED_POLICIES.md).
+
 ## Prerequisites
 
 - Python 3.8 or later
