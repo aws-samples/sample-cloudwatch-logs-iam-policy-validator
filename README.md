@@ -2,11 +2,11 @@
 
 A Python script that simulates an IAM policy against every CloudWatch Logs API action for both log-group and log-stream ARN formats using `aws iam simulate-custom-policy`.
 
-Use this script to verify that your IAM policies work correctly with the **standard log group ARN format** (without a trailing `:*`) before AWS CloudWatch Logs begins enforcing it.
+Use this script to verify that your IAM policies work correctly with the **standard log group ARN format** (without a trailing `:*`) before Amazon CloudWatch Logs begins enforcing it.
 
 ## Background
 
-AWS CloudWatch Logs is enforcing the standard log group ARN format for IAM authorization. Policies that use the old format with a trailing `:*` (for example, `arn:aws:logs:us-east-1:123456789012:log-group:MyGroup:*`) will stop taking effect for log-group-level actions after enforcement begins.
+Amazon CloudWatch Logs is enforcing the standard log group ARN format for IAM authorization. Policies that use the old format with a trailing `:*` (for example, `arn:aws:logs:us-east-1:123456789012:log-group:MyGroup:*`) will stop taking effect for log-group-level actions after enforcement begins.
 
 This script helps you verify your policies before that date.
 
