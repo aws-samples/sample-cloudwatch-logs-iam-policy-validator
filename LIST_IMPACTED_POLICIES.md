@@ -1,6 +1,6 @@
 # List IAM Policies Impacted by the CloudWatch Logs Log Group ARN Format Enforcement
 
-AWS CloudWatch Logs is enforcing the standard log group ARN format for IAM
+Amazon CloudWatch Logs is enforcing the standard log group ARN format for IAM
 authorization. Policies that use the old format with a trailing `:*` (for
 example, `arn:aws:logs:us-east-1:123456789012:log-group:MyGroup:*`) will stop
 taking effect for log-group-level actions after enforcement begins.
